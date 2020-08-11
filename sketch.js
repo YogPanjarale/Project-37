@@ -51,7 +51,7 @@ function mouseClicked(){
       web.join(player.body)
       web.setTarget(mouseX+(camera.position.x - width/2),mouseY+(camera.position.y - height/2))
     }
-    console.log("mouse")
+    //console.log("mouse")
   };
     
 
