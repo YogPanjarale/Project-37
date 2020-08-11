@@ -1,6 +1,6 @@
 class SpiderMan extends BaseClass {
   constructor(x,y){
-    super(x,y,50,50);
+    super(x,y,height/20,height/20);
     this.image = loadImage("SpiderMan.png");
    // this.smokeImage = loadImage("sprites/smoke.png");
   
