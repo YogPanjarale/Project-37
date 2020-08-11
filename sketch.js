@@ -7,22 +7,22 @@ var engine, world;
 var player,web
 var Score=0;
 function setup() {
-  console.log("1.2")
+  console.log("1.3")
   createCanvas(windowWidth,windowHeight);
   //createSprite(400, 200, 50, 50);
-  scale(1000/height)
+  //scale(1000/height)
   engine = Engine.create();
   world = engine.world;
   player = new SpiderMan(width/2,height/2)
   web = new Web(player.body,{x:player.body.position.x,y:player.body.position.y})
-  roof = newWall(400,100,500,30);
-  base = newWall(400,0,100000,100)
-  base = newWall(400,height,100000,100)
+  roof = newWall(400,height*0.1,500,height*0.03);
+  base = newWall(400,0,100000,height*0.1)
+  base = newWall(400,height,100000,height*0.1)
   for(let i =1;i<500;i+=2){
-    newWall(i*200+random(200,400),random(height*2/3,height*4/5),random(100,300),random(50,width/5))
+    newWall(i*200+random(200,400),random(height*2/3,height*4/5),random(100,300),random(50,height/5))
   }
   for(let i =1;i<500;i+=2){
-    newWall(i*200+random(200,400),50,random(100,300),random(50,150))
+    newWall(i*200+random(200,400),50,random(height*0.1,height*0.3),random(height*0.05,height*0.15))
   }
   web.fly()
 }
