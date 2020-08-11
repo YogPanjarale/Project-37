@@ -42,6 +42,9 @@ function draw() {
    textSize(30)
   textAlign(CENTER);
   text("Score: "+int(Score/100),width/2,height/5)
+  textSize(20)
+  text("Use Arrow Keys To Move",width/2,height*0.8)
+  text("Click on Brown Area to Swing There",width/2,height*0.88)
   pop()
 }
 function mouseClicked(){
