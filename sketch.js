@@ -7,7 +7,7 @@ var engine, world;
 var player,web
 var Score=0;
 function setup() {
-  console.log("1.3")
+  console.log("1.4")
   createCanvas(windowWidth,windowHeight);
   //createSprite(400, 200, 50, 50);
   //scale(1000/height)
