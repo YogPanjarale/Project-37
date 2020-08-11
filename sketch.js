@@ -9,7 +9,7 @@ var Score=0;
 function setup() {
   createCanvas(windowWidth,windowHeight);
   //createSprite(400, 200, 50, 50);
-  scale = 1000/height
+  scale(1000/height)
   engine = Engine.create();
   world = engine.world;
   player = new SpiderMan(width/2,height/2)
